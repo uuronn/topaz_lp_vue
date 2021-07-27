@@ -34,21 +34,44 @@ export default {
 <style lang="scss" scoped>
 .mv {
   background: $topaz-color;
+  position: relative;
+  overflow: hidden;
   width: 100%;
 
   &__topLogo {
+
     .topLogo__img {
-      
+      padding: 20px 0 0 20px;
     }
   }
 
   &__mainContainer {
     display: flex;
+    justify-content: center;
   }
+  
+  &__mainForm {
+    padding: 80px;
+  }
+
   .mv__mainLogo {
     .mainLogo__img {
 
     }
+  }
+
+  &__mixSample {
+    margin-right: -10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mixSample__img {
+      width: 50vw;
+    }
+  }
+
+  &__bottomArrow {
+    text-align: center;
   }
 }
 </style>
