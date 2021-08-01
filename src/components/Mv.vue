@@ -1,28 +1,22 @@
 <template>
   <div class="mv">
-    <div class="mv__topLogo">
-      <img class="topLogo__img" src="../assets/image/mv_hackz-img.png" alt="">
+    <div class="top">
+      <img class="top__img" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
     </div>
-    <div class="mv__mainContainer">
-      <div class="mv__mainForm">
-        <div class="mv__mainLogo">
-          <img class="mainLogo__img" src="../assets/image/topaz-img.png" alt="">
-        </div>
-        <p class="mv__text">エンジニアのinput・outputを可視化する</p>
-        <button class="mv__btn">使ってみる⇀</button>
-      </div>
-      <div class="mv__mixSample">
-        <img class="mixSample__img" src="../assets/image/mv_mix-img.png" alt="">
-      </div>
-    </div>
-    <div class="mv__bottomArrow">
-      <img class="bottomArrow__img" src="../assets/image/arrow.png" alt="">
+    <Topaz/>
+    <div class="foot">
+      <img class="foot__img" src="../assets/image/arrow.png" alt="mv矢印画像">
     </div>
   </div>
 </template>
 
 <script>
+import Topaz from './Topaz.vue'
+
 export default {
+  components: {
+    Topaz
+  },
   data() {
     return {
 
@@ -32,46 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mv {
-  background: $topaz-color;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-
-  &__topLogo {
-
-    .topLogo__img {
-      padding: 20px 0 0 20px;
-    }
+  .mv {
+    background: linear-gradient(to right, #29A3BF, #4BCBBB);
   }
-
-  &__mainContainer {
-    display: flex;
-    justify-content: center;
-  }
-  
-  &__mainForm {
-    padding: 80px;
-  }
-
-  .mv__mainLogo {
-    .mainLogo__img {
-
-    }
-  }
-
-  &__mixSample {
-    margin-right: -10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .mixSample__img {
-      width: 50vw;
-    }
-  }
-
-  &__bottomArrow {
-    text-align: center;
-  }
-}
 </style>
