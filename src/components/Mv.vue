@@ -1,11 +1,11 @@
 <template>
   <div class="mv">
-    <div class="top">
-      <img class="top__img" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
+    <div class="mv__top">
+      <img class="mv__img--logo" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
     </div>
     <Topaz/>
-    <div class="foot">
-      <img class="foot__img" src="../assets/image/arrow.png" alt="mv矢印画像">
+    <div class="mv__foot">
+      <img class="mv__img--arrow" src="../assets/image/arrow.png" alt="mv矢印画像">
     </div>
   </div>
 </template>
@@ -16,17 +16,21 @@ import Topaz from './Topaz.vue'
 export default {
   components: {
     Topaz
-  },
-  data() {
-    return {
-
-    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .mv {
-    background: linear-gradient(to right, #29A3BF, #4BCBBB);
+.mv {
+  background: $topaz-color;
+
+  &__img--logo {
+    padding: 2vw 0 0 2vw;
   }
+
+  &__foot {
+    text-align: center;
+  }
+  
+}
 </style>

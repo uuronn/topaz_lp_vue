@@ -7,7 +7,8 @@
 
 <style lang="scss" scoped>
 .footer {
-  background: #000;
+  background: #222;
+  
   &__img {
     width: 20vw;
     min-width: 200px;
@@ -19,5 +20,6 @@
     font-size: 8px;
     padding: 0 5vw 5vw 5vw;
   }
+
 }
 </style>
