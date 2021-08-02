@@ -1,7 +1,7 @@
 <template>
   <div class="mv">
     <div class="mv__top">
-      <img class="mv__img--logo" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
+        <img class="mv__img--logo" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
     </div>
     <Topaz/>
     <div class="mv__foot">

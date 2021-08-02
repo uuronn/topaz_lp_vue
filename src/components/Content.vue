@@ -11,8 +11,20 @@
     <div class="container">
 
     </div>
+    <Opuses/>
   </div>
 </template>
+
+<script>
+import Opuses from './Opuses.vue'
+
+export default {
+  components: {
+    Opuses
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 div {
