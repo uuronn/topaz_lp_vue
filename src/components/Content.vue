@@ -1,16 +1,23 @@
 <template>
   <div class="content">
-    <div class="container">
-      <div>
-        <img src="../assets/image/talk-img.png" alt="">
-      </div>
-      <div>
-        日頃
-      </div>
-    </div>
-    <div class="container">
-
-    </div>
+    <ol class="content__list">
+      <li class="content__item">
+        <div class="content__container">
+          <h2 class="content__title">日頃のインプットをレシピに</h2>
+          <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
+          <button class="content__button">もっと見る</button>
+        </div>
+        <img class="content__img" src="../assets/image/content_talk-img.png" alt="トーク画像">
+      </li>
+      <li class="content__item">
+        <div class="content__container">
+          <h2 class="content__title">作ったモノをプロジェクトに</h2>
+          <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
+          <button class="content__button">もっと見る</button>
+        </div>
+        <img class="content__img" src="../assets/image/content_question-img.png" alt="クエスチョン画像">
+      </li>
+    </ol>
     <Opus/>
     <Slider/>
   </div>
@@ -31,8 +38,12 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  width: 80%;
+  width: 85%;
   background: #eee;
   margin: 0 auto;
+
+  &__item {
+    display: flex;
+  }
 }
 </style>

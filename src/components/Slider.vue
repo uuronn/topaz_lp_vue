@@ -1,6 +1,8 @@
 <template>
   <div class="slider">
-    <button class="slider__button--left button">←</button>
+    <div class="slider__wrapper left">
+      <button class="slider__button--left button">←</button>
+    </div>
     <ul class="slider__list">
       <li class="slider__item">
         <img src="../assets/image/slider_talk-img.png" alt="トーク画像">
@@ -21,19 +23,30 @@
         <img src="../assets/image/slider_chocolate-img.png" alt="チョコLT">
       </li>
     </ul>
-    <button class="slider__button--right button">→</button>
+    <div class="slider__wrapper right">
+      <button class="slider__button--right button">→</button>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .slider {
   display: flex;
+  height: 170px;
 
-  &__button--left {
+  &__wrapper {
+    position: absolute;
+    height: 170px;
+    background: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left {
     left: 0;
   }
 
-  &__button--right {
+  .right {
     right: 0;
   }
 
@@ -42,8 +55,7 @@
     list-style: none;
   }
   .button {
-    position: absolute;
-    background: red;
+    
   }
 
 }
