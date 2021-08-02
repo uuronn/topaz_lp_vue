@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     <div class="container">
       <div>
         <img src="../assets/image/talk-img.png" alt="">
@@ -11,24 +11,25 @@
     <div class="container">
 
     </div>
-    <Opuses/>
+    <Opus/>
   </div>
 </template>
 
 <script>
-import Opuses from './Opuses.vue'
+import Opus from './Opus.vue'
 
 export default {
   components: {
-    Opuses
+    Opus
   }
 }
 </script>
 
 
 <style lang="scss" scoped>
-div {
-  width:100%;
-  background: #fff;
+.content {
+  width: 80%;
+  background: #eee;
+  margin: 0 auto;
 }
 </style>
