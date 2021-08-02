@@ -1,11 +1,11 @@
 <template>
   <div class="mv">
-    <div class="mv__top">
-        <img class="mv__img--logo" src="../assets/image/mv_logo-img.png" alt="ハックツロゴ画像">
+    <div class="mv__head">
+        <img class="mv__logo" src="../assets/image/mv_logo-img.png" alt="ハックツロゴ画像">
     </div>
     <Topaz/>
     <div class="mv__foot">
-      <img class="mv__img--arrow" src="../assets/image/mv_arrow-img.png" alt="矢印の画像">
+      <img class="mv__arrow" src="../assets/image/mv_arrow-img.png" alt="矢印の画像">
     </div>
   </div>
 </template>
@@ -24,13 +24,12 @@ export default {
 .mv {
   background: $topaz-color;
 
-  &__img--logo {
+  &__logo {
     padding: 2vw 0 0 2vw;
   }
 
   &__foot {
     text-align: center;
   }
-  
 }
 </style>

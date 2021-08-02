@@ -2,6 +2,7 @@
   <div class="content">
     <ol class="content__list">
       <li class="content__item">
+        <h2>fdfd</h2>
         <div class="content__container">
           <h2 class="content__title">日頃のインプットをレシピに</h2>
           <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>

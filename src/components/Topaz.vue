@@ -2,12 +2,14 @@
   <div class="topaz">
     <div class="topaz__wrapper">
       <h1 class="topaz__title">
-        <img class="topaz__img--logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
+        <img class="topaz__logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
       </h1>
       <p class="topaz__text">エンジニアのinput・outputを可視化する</p>
       <button class="topaz__btn">使ってみる⇀</button>
     </div>
-    <img class="topaz__img--profile" src="../assets/image/topaz_mix-img.png" alt="">
+    <img class="topaz__profile" src="../assets/image/topaz_mix-img.png" alt="プロフィール画像">
+    <img class="topaz__sp" src="../assets/image/topaz_profile-img.png" width="220px" height="120px" alt="スマホ版画像">
+    <img class="topaz__sp--small" src="../assets/image/topaz_profile-mini-img.png" widht="120px" height="240px" alt="スマホ版画像">
   </div>
 </template>
 
@@ -24,7 +26,7 @@
     margin-right: 8vw;
   }
 
-  &__img--logo {
+  &__logo {
     width: 15vw;
   }
 
@@ -33,10 +35,18 @@
     margin: 2vw 0 4vw 0;
   }
 
-  &__img--profile {
+  &__profile {
     width: 60vw;
     min-width: 320px;
     margin-right: -10%;
+  }
+
+  &__sp {
+    display: none;
+  }
+
+  &__sp--small {
+    display: none;
   }
     
   @media screen and (max-width: 480px) {
@@ -46,7 +56,7 @@
       margin: 0;
     }
 
-    &__img--logo {
+    &__logo {
       width: 120px;
     }
 
@@ -54,8 +64,22 @@
       margin: 0 0 40px 0;
     }
 
-    &__img--profile {
+    &__profile {
       display: none;
+    }
+    
+    &__sp {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__sp--small {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
 }
