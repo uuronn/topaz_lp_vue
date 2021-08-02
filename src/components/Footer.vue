@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <img class="footer__img" src="../assets/image/footer-img.png" alt="">
+    <img class="footer__img" src="../assets/image/footer_logo-img.png" alt="">
     <p class="footer__copy">©2020 Hack’z  Inc. all rights reserved.</p>
   </div>
 </template>

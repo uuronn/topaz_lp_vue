@@ -12,15 +12,18 @@
 
     </div>
     <Opus/>
+    <Slider/>
   </div>
 </template>
 
 <script>
 import Opus from './Opus.vue'
+import Slider from './Slider.vue'
 
 export default {
   components: {
-    Opus
+    Opus,
+    Slider
   }
 }
 </script>

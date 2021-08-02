@@ -1,11 +1,11 @@
 <template>
   <div class="mv">
     <div class="mv__top">
-        <img class="mv__img--logo" src="../assets/image/mv_hackz-img.png" alt="mvハックツのロゴ">
+        <img class="mv__img--logo" src="../assets/image/mv_logo-img.png" alt="ハックツロゴ画像">
     </div>
     <Topaz/>
     <div class="mv__foot">
-      <img class="mv__img--arrow" src="../assets/image/arrow.png" alt="mv矢印画像">
+      <img class="mv__img--arrow" src="../assets/image/mv_arrow-img.png" alt="矢印の画像">
     </div>
   </div>
 </template>

@@ -2,12 +2,12 @@
   <div class="topaz">
     <div class="topaz__wrapper">
       <h1 class="topaz__title">
-        <img class="topaz__img--logo" src="../assets/image/topaz-img.png" alt="トパーズロゴ">
+        <img class="topaz__img--logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
       </h1>
       <p class="topaz__text">エンジニアのinput・outputを可視化する</p>
       <button class="topaz__btn">使ってみる⇀</button>
     </div>
-    <img class="topaz__img--profile" src="../assets/image/mv_mix-img.png" alt="">
+    <img class="topaz__img--profile" src="../assets/image/topaz_mix-img.png" alt="">
   </div>
 </template>
 
