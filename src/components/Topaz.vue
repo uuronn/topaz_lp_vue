@@ -1,6 +1,6 @@
 <template>
   <div class="topaz">
-    <div class="topaz__wrapper">
+    <div class="topaz__container">
       <h1 class="topaz__title">
         <img class="topaz__logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
       </h1>
@@ -20,7 +20,7 @@
   align-items: center;
   margin: 80px 0 80px 80px;
 
-  &__wrapper {
+  &__container {
     text-align: center;
     min-width: 320px;
     margin-right: 6vw;
@@ -34,9 +34,9 @@
   &__text {
     font-size: 14px;
     font-weight: bolder;
-    text-align: right;
     margin: 2vw 0 4vw 0;
     color: #fff;
+    padding-left: 30px;
   }
 
   &__button {
@@ -47,12 +47,18 @@
     width: 160px;
     height: 40px;
     font-weight: 600;
+
+    &:hover {
+      background: #29A3BF;
+      border: 3px solid #fff;
+      color: #fff;
+    }
   }
 
   &__profile {
     width: 60vw;
     min-width: 320px;
-    margin-right: -10%;
+    margin: 0 -10% 0 8vw;
   }
 
   &__sp {
@@ -63,7 +69,7 @@
     display: none;
   }
     
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 520px) {
     margin: 180px 0 100px 0;
 
     &__wrapper {

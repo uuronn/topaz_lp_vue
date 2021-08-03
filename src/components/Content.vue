@@ -2,19 +2,24 @@
   <div class="content">
     <ol class="content__list">
       <li class="content__item">
-        <h2>fdfd</h2>
         <div class="content__container">
-          <h2 class="content__title">日頃のインプットをレシピに</h2>
-          <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
-          <button class="content__button">もっと見る</button>
+          <h2 class="content__number">01.</h2>
+          <div class="content__texts">
+            <h2 class="content__title">日頃のインプットをレシピに</h2>
+            <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
+            <button class="content__button">もっと見る</button>
+          </div>
         </div>
         <img class="content__img" src="../assets/image/content_talk-img.png" alt="トーク画像">
       </li>
-      <li class="content__item">
+      <li class="content__item--bottom">
         <div class="content__container">
-          <h2 class="content__title">作ったモノをプロジェクトに</h2>
-          <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
-          <button class="content__button">もっと見る</button>
+          <h2 class="content__number">02.</h2>
+          <div class="content__texts">
+            <h2 class="content__title">作ったモノをプロジェクトに</h2>
+            <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
+            <button class="content__button">もっと見る</button>
+          </div>
         </div>
         <img class="content__img" src="../assets/image/content_question-img.png" alt="クエスチョン画像">
       </li>
@@ -46,6 +51,24 @@ export default {
 
   &__item {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  &__item--bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    min-width: 380px;
+  }
+
+  &__img {
+    margin: auto 5vw;
+    width: 20vw;
+    height: 20vw;
   }
 }
 </style>

@@ -24,12 +24,8 @@ export default {
 .mv {
   background: $topaz-color;
 
-  &__head {
-    background: red;
-  }
-
   &__logo {
-    padding: 2vw 0 1vw 2vw;
+    padding: 1vw 0 1vw 2vw;
   }
 
   &__foot {

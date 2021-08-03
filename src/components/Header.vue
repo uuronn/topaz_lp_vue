@@ -18,7 +18,7 @@
   // display: none;
   
   &__logo {
-    padding: 2vw 0 1vw 2vw;
+    padding: 1vw 0 1vw 2vw;
   }
 
   &__button {
@@ -30,6 +30,12 @@
     width: 160px;
     height: 40px;
     font-weight: 600;
+
+    &:hover {
+      background: #29A3BF;
+      border: 3px solid #fff;
+      color: #fff;
+    }
   }
 }
 </style>
