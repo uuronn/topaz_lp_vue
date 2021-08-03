@@ -42,6 +42,7 @@ export default {
   width: 85%;
   background: #eee;
   margin: 0 auto;
+  z-index: 9;
 
   &__item {
     display: flex;

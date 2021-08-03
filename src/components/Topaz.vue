@@ -5,7 +5,7 @@
         <img class="topaz__logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
       </h1>
       <p class="topaz__text">エンジニアのinput・outputを可視化する</p>
-      <button class="topaz__btn">使ってみる⇀</button>
+      <button class="topaz__button">使ってみる!&nbsp;⇀</button>
     </div>
     <img class="topaz__profile" src="../assets/image/topaz_mix-img.png" alt="プロフィール画像">
     <img class="topaz__sp" src="../assets/image/topaz_profile-img.png" width="220px" height="120px" alt="スマホ版画像">
@@ -24,6 +24,7 @@
     text-align: center;
     min-width: 320px;
     margin-right: 6vw;
+    z-index: 8;
   }
 
   &__logo {
@@ -35,6 +36,17 @@
     font-weight: bolder;
     text-align: right;
     margin: 2vw 0 4vw 0;
+    color: #fff;
+  }
+
+  &__button {
+    background: white;
+    color: #29A3BF;
+    border: 3px solid #29A3BF;
+    border-radius: 50px 0 50px 50px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
   }
 
   &__profile {
@@ -74,15 +86,19 @@
     &__sp {
       display: block;
       position: absolute;
-      right: 0;
-      top: 0;
+      right: -12%;
+      top: 10%;
+      transform: rotate(-10deg);
+      z-index: 7;
     }
 
     &__sp--small {
       display: block;
       position: absolute;
-      left: 0;
-      bottom: 0;
+      left: -5%;
+      bottom: -4%;
+      transform: rotate(24deg);
+      z-index: 7;
     }
   }
 }

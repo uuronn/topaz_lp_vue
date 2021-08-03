@@ -3,7 +3,7 @@
     <div class="header__wrapper">
       <img class="header__logo" src="../assets/image/header_logo-img.png" alt="ヘッダー画像">
     </div>
-    <button class="header__button">使ってみる⇀</button>
+    <button class="header__button">使ってみる!&nbsp;⇀</button>
   </div>
 </template>
 
@@ -22,7 +22,14 @@
   }
 
   &__button {
-
+    margin: auto 2vw;
+    background: white;
+    color: #29A3BF;
+    border: 3px solid #29A3BF;
+    border-radius: 50px 0 50px 50px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
   }
 }
 </style>
