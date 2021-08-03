@@ -23,7 +23,7 @@
   &__wrapper {
     text-align: center;
     min-width: 320px;
-    margin-right: 8vw;
+    margin-right: 6vw;
   }
 
   &__logo {
@@ -31,7 +31,9 @@
   }
 
   &__text {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: right;
     margin: 2vw 0 4vw 0;
   }
 
@@ -50,7 +52,7 @@
   }
     
   @media screen and (max-width: 480px) {
-    margin: 80px 0;
+    margin: 180px 0 100px 0;
 
     &__wrapper {
       margin: 0;
@@ -61,7 +63,8 @@
     }
 
     &__text {
-      margin: 0 0 40px 0;
+      margin-bottom: 100px;
+      text-align: center;
     }
 
     &__profile {
