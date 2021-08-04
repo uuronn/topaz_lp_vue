@@ -7,7 +7,9 @@
           <div class="content__texts">
             <h2 class="content__title">日頃のインプットをレシピに</h2>
             <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
-            <button class="content__button">もっと見る</button>
+            <div class="content__wrapper">
+              <button class="content__button">もっと見る</button>
+            </div>
           </div>
         </div>
         <img class="content__img" src="../assets/image/content_talk-img.png" alt="トーク画像">
@@ -18,7 +20,9 @@
           <div class="content__texts">
             <h2 class="content__title">作ったモノをプロジェクトに</h2>
             <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
-            <button class="content__button">もっと見る</button>
+            <div class="content__wrapper">
+              <button class="content__button">もっと見る</button>
+            </div>
           </div>
         </div>
         <img class="content__img" src="../assets/image/content_question-img.png" alt="クエスチョン画像">
@@ -45,31 +49,58 @@ export default {
 <style lang="scss" scoped>
 .content {
   width: 85%;
-  background: #eee;
-  margin: 0 auto;
+  margin: 6vw auto;
   z-index: 9;
 
   &__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row-reverse;
+    margin-bottom: 6vw;
   }
 
   &__item--bottom {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 6vw;
   }
 
   &__container {
     display: flex;
     min-width: 380px;
-    width: 90vw;
+  }
+
+  &__texts {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__button {
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    background: $topaz-color;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px gray;
+    transition: 0.5s;
+
+    &:hover {
+      box-shadow: none;
+      transition: 0.5s;
+    }
   }
 
   &__img {
     margin: auto 6vw;
-    width: 20vw;
-    min-width: 120px;
+    width: 50vw;
+    min-width: 160px;
   }
 
   @media  screen and (max-width: 720px) {

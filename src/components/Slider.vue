@@ -37,7 +37,7 @@
   &__wrapper {
     position: absolute;
     height: 170px;
-    background: red;
+    background: #fff;
     display: flex;
     justify-content: center;
   }
@@ -52,10 +52,26 @@
 
   &__list {
     display: flex;
+    margin: 0 40px;
     list-style: none;
   }
   .button {
-    
+    margin: auto 0;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 3px solid #29A3BF;
+    color: #29A3BF;
+    font-weight: 900;
+    transition: 0.5s;
+
+    &:hover {
+      border: 3px solid #fff;
+      color: #fff;
+      background: #29A3BF;
+      transition: 0.5s;
+    }
   }
 
 }

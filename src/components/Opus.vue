@@ -25,9 +25,11 @@
 </template>
 <style lang="scss" scoped>
 .opus {
+  margin-bottom: 80px;
 
   &__title {
     text-align: center;
+    margin-bottom: 24px;
 
     &::after {
       content: "";
@@ -45,6 +47,18 @@
     justify-content: space-around;
     flex-wrap:wrap;
     list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 4px gray;
+    transition: 0.1s;
+    border-radius: 18px;
+
+  &:hover {
+    box-shadow: 1px 1px 1px gray;
+    transition: 0.1s;
+  }
   }
 }
 </style>
