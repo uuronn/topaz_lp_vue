@@ -63,12 +63,33 @@ export default {
   &__container {
     display: flex;
     min-width: 380px;
+    width: 90vw;
   }
 
   &__img {
-    margin: auto 5vw;
+    margin: auto 6vw;
     width: 20vw;
-    height: 20vw;
+    min-width: 120px;
+  }
+
+  @media  screen and (max-width: 720px) {
+    width: 95%;
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item--bottom {
+      flex-direction: column;
+    }
+
+    &__container {
+      
+    }
+
+    &__img {
+      margin: auto;
+    }
   }
 }
 </style>

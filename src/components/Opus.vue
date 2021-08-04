@@ -28,6 +28,16 @@
 
   &__title {
     text-align: center;
+
+    &::after {
+      content: "";
+      background: #29A3BF;
+      width: 88px;
+      border-radius: 50px;
+      height: 4px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 
   &__list {
