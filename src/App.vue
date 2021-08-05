@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="root">
     <Header/>
     <Mv/>
     <Content/>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+.root {
   width: 100%;
   position: relative;
   overflow: hidden;
