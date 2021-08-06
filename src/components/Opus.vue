@@ -32,6 +32,7 @@
     text-align: center;
     margin-bottom: 24px;
 
+    // タイトルの下線
     &::after {
       content: "";
       background: $topaz-dark;
@@ -50,6 +51,7 @@
     list-style: none;
   }
 
+  // 各作品
   &__item {
     margin-bottom: 40px;
     box-shadow: $opus-shadow;

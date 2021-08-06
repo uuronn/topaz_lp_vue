@@ -34,6 +34,7 @@
   display: flex;
   height: 170px;
 
+  // 矢印ボタンのwrapper
   &__wrapper {
     display: flex;
     position: absolute;
@@ -42,14 +43,11 @@
     background: $color-white;
   }
 
-  .left {
-    left: 0;
-  }
-
   .right {
     right: 0;
   }
 
+  // 矢印ボタン
   &__button {
     margin: auto 8px;
     width: 40px;
@@ -68,6 +66,7 @@
     }
   }
 
+  // 画像リスト
   &__list {
     display: flex;
     margin: 0 40px;
