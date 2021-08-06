@@ -1,10 +1,24 @@
 <template>
   <div class="Imgs">
-    <img class="Imgs__profile" src="../assets/image/topaz_mix-img.png" alt="プロフィール画像">
-    <img class="Imgs__sp show" src="../assets/image/topaz_profile-img.png" width="220px" height="120px" alt="スマホ版画像">
-    <img class="Imgs__sp--small show" src="../assets/image/topaz_profile-mini-img.png" widht="120px" height="240px" alt="スマホ版画像">
+    <img class="Imgs__profile" :src="images.pc" alt="プロフィール画像">
+    <img class="Imgs__sp show" :src="images.sp" width="220px" height="120px" alt="スマホ版画像">
+    <img class="Imgs__sp--small show" :src="images.spMini" widht="120px" height="240px" alt="スマホ版画像">
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      images: {
+        pc: require("../assets/image/topaz_mix-img.png"),
+        sp: require("../assets/image/topaz_profile-img.png"),
+        spMini: require("../assets/image/topaz_profile-mini-img.png")
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .Imgs {

@@ -1,9 +1,9 @@
 <template>
   <div class="header" v-show="scrollShow">
     <div class="header__wrapper">
-      <img class="header__logo" src="../assets/image/header_logo-img.png" alt="ヘッダー画像">
+      <img class="header__logo" :src="img" alt="ヘッダー画像">
     </div>
-    <button class="header__button">使ってみる!&nbsp;⇀</button>
+    <button class="header__button">{{ btnName }}</button>
   </div>
 </template>
 
@@ -11,7 +11,9 @@
 export default {
   data() {
     return {
-      scrollShow: false
+      scrollShow: false,
+      img: require("../assets/image/header_logo-img.png"),
+      btnName: "使ってみる! ⇀"
     }
   },
   methods: {
@@ -25,7 +27,6 @@ export default {
       }
     }
   },
-  
   created() {
     addEventListener("scroll",this.handleScroll)
   }
@@ -57,7 +58,7 @@ export default {
 
     &:hover {
       color: $color-white;
-      border: $border-color;
+      border: $border-hover;
       background: $topaz-dark;
     }
   }

@@ -2,10 +2,10 @@
   <div class="topaz">
     <div class="topaz__container">
       <h1 class="topaz__title">
-        <img class="topaz__logo" src="../assets/image/topaz_logo-img.png" alt="トパーズロゴ">
+        <img class="topaz__logo" :src="img" alt="トパーズロゴ">
       </h1>
-      <p class="topaz__text">エンジニアのinput・outputを可視化する</p>
-      <button class="topaz__button">使ってみる!&nbsp;⇀</button>
+      <p class="topaz__text">{{ text }}</p>
+      <button class="topaz__button">{{ btnName }}</button>
     </div>
     <TopazImgs/>
   </div>
@@ -15,6 +15,13 @@
 import TopazImgs from './TopazImgs.vue'
 
 export default {
+  data() {
+    return {
+      img: require(`@/assets/image/topaz_logo-img.png`),
+      text: "エンジニアのinput・outputを可視化する",
+      btnName: "使ってみる! ⇀"
+    }
+  },
   components: {
     TopazImgs
   }
@@ -34,6 +41,7 @@ export default {
     z-index: 8;
   }
 
+  // トパーズのロゴ
   &__logo {
     width: 15vw;
   }
@@ -42,22 +50,23 @@ export default {
     font-size: 14px;
     font-weight: bolder;
     margin: 2vw 0 4vw 0;
-    color: #fff;
+    color: $color-white;
   }
 
+  // 使ってみる！のボタン
   &__button {
-    background: white;
-    color: #29A3BF;
-    border: 3px solid #29A3BF;
+    background: $color-white;
+    color: $topaz-dark;
+    border: $border-color;
     border-radius: 50px 0 50px 50px;
     width: 160px;
     height: 40px;
     font-weight: 600;
 
     &:hover {
-      background: #29A3BF;
-      border: 3px solid #fff;
-      color: #fff;
+      background: $topaz-dark;
+      border: $border-hover;
+      color: $color-white;
     }
   }
 
