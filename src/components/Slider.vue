@@ -50,12 +50,6 @@
     right: 0;
   }
 
-  &__list {
-    display: flex;
-    margin: 0 40px;
-    list-style: none;
-  }
-
   &__button {
     margin: auto 8px;
     width: 40px;
@@ -72,6 +66,12 @@
       background: $topaz-dark;
       transition: 0.5s;
     }
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 40px;
+    list-style: none;
   }
 }
 </style>

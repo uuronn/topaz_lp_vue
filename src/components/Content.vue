@@ -6,7 +6,7 @@
           <h2 class="content__number">01.</h2>
           <div class="content__texts">
             <h2 class="content__title">日頃のインプットをレシピに</h2>
-            <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
+            <p class="content__text">レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！レシピのそれっぽい説明入れてみて！</p>
             <div class="content__wrapper">
               <button class="content__button">もっと見る</button>
             </div>
@@ -19,7 +19,7 @@
           <h2 class="content__number">02.</h2>
           <div class="content__texts">
             <h2 class="content__title">作ったモノをプロジェクトに</h2>
-            <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
+            <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
             <div class="content__wrapper">
               <button class="content__button">もっと見る</button>
             </div>
@@ -68,10 +68,6 @@ export default {
   &__container {
     display: flex;
     min-width: 380px;
-  }
-
-  &__texts {
-
   }
 
   &__wrapper {
