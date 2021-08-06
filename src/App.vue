@@ -1,11 +1,12 @@
 <template>
-  <div class="root">
+  <div>
     <Header/>
     <Mv/>
     <Content/>
     <Footer/>
   </div>
 </template>
+
 <script>
 import Header from './components/Header.vue'
 import Mv from './components/Mv.vue'
@@ -23,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.root {
+* {
   width: 100%;
   position: relative;
   overflow: hidden;

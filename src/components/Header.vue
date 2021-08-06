@@ -13,7 +13,7 @@
   justify-content: space-between;
   position: fixed;
   z-index: 10;
-  background: #fff;
+  background: $color-white;
   opacity: 0.5;
   // display: none;
   
@@ -21,20 +21,21 @@
     padding: 1vw 0 1vw 2vw;
   }
 
+  // 使ってみる！ のボタン
   &__button {
+    color: $topaz-dark;
+    border: $border-color;
     margin: auto 2vw;
-    background: white;
-    color: #29A3BF;
-    border: 3px solid #29A3BF;
     border-radius: 50px 0 50px 50px;
+    font-weight: 600;
     width: 160px;
     height: 40px;
-    font-weight: 600;
+    background: $color-white;
 
     &:hover {
-      background: #29A3BF;
-      border: 3px solid #fff;
-      color: #fff;
+      color: $color-white;
+      border: $border-color;
+      background: $topaz-dark;
     }
   }
 }
