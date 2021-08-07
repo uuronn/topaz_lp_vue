@@ -1,21 +1,11 @@
 <template>
   <div class="content">
     <ol class="content__list">
-      <ContentItem
-       class="content__item"
-      />
       <li class="content__item">
-        <div class="content__container">
-          <h2 class="content__number">02.</h2>
-          <div class="content__texts">
-            <h2 class="content__title">作ったモノをプロジェクトに</h2>
-            <p class="content__text">プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！プロジェクトのそれっぽい説明入れてみて！</p>
-            <div class="content__wrapper">
-              <button class="content__button">もっと見る</button>
-            </div>
-          </div>
-        </div>
-        <img class="content__img" src="../assets/image/content_question-img.png" alt="クエスチョン画像">
+        <ContentItemReverse/>
+      </li>
+      <li class="content__item">
+        <ContentItem/>
       </li>
     </ol>
     <Opus/>
@@ -24,6 +14,7 @@
 </template>
 
 <script>
+import ContentItemReverse from './ContentItemReverse.vue'
 import ContentItem from './ContentItem.vue'
 import Opus from './Opus.vue'
 import Slider from './Slider.vue'
@@ -35,6 +26,7 @@ export default {
     }
   },
   components: {
+    ContentItemReverse,
     ContentItem,
     Opus,
     Slider
